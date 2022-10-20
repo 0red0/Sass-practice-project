@@ -1,0 +1,48 @@
+body {
+  font-family: Tahoma;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.header .logo {
+  width: 30%;
+  float: left;
+}
+.header .navbar {
+  width: 70%;
+  float: left;
+}
+body {
+  background-color: rgb(0, 54, 61);
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=homepage.css.map */

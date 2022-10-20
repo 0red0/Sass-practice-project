@@ -1,0 +1,47 @@
+body {
+   background-color: rgb(0, 54, 61);
+}
+// p {
+//    //using media from variables directly
+//    @media (min-width: $minSmall) {
+//       color: green;
+//    }
+//    @media #{$minMedium} {
+//       color: blue;
+//    }
+//    @media (max-width: $maxMobile) {
+//       color: yellow;
+//    }
+// }
+// //using mixin for media
+// p {
+//    @include minMedium {
+//       color: aqua;
+//    }
+// }
+// .product {
+//    background-color: #eee;
+//    padding: 10px;
+//    border: 1px solid #aaa;
+//    width: 300px;
+//    height: 150px;
+//    position: relative;
+//    @include prefixer(box-shadow, 10px 10px 10px #ccc, ms webkit o moz);
+//    animation: fadeInOut 2s linear infinite;
+//    @include prefixer(animation, fadeInOut 2s infinite linear, webkit moz o);
+//    .overlay {
+//       @include overlay;
+//       background-color: rgba($redColor, 0.4);
+//    }
+// }
+@include keyBaloot(fadeInOut) {
+   0% {
+      opacity: 0.5;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0.5;
+   }
+}
