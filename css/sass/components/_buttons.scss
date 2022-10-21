@@ -1,0 +1,9 @@
+.main-button {
+   background-color: rgba($redColor, 0.9);
+   color: #fff;
+   outline: none;
+   border: none;
+   &:hover {
+      background-color: $redColor;
+   }
+}

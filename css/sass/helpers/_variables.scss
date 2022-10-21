@@ -1,8 +1,9 @@
-$maxMobile: 767px;
-$minSmall: 768px;
-$maxSmall: 991px;
-$minMedium: "(min-width:992px)";
-$maxMedium: 1099px;
+$minMobile: "(min-width:767px)";
+$maxMobile: "(max-width:768px)";
+$minSmall: "(min-width:991px)";
+$maxSmall: "(max-width:992px)";
+$minMedium: "(min-width:1099px)";
+$maxMedium: "(max-width:1200px)";
 
 $bodyBgc: rgb(0, 54, 61);
 $redColor: #e2494c;
