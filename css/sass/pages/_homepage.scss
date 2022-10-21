@@ -1,6 +1,136 @@
-body {
-   background-color: rgb(0, 54, 61);
+.slider {
+   blockquote {
+      font: {
+         size: 20px;
+         style: italic;
+      }
+      line-height: 1.7;
+      text-align: center;
+      color: #5e5e5e;
+      width: 80%;
+      margin: 30px auto;
+   }
+   img {
+      max-width: 100%;
+   }
+   .bullets {
+      text-align: center;
+      li {
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         background-color: $greyColor;
+         border-radius: 4px;
+         border: 2px solid $greyColor;
+         cursor: pointer;
+         &:hover,
+         &.active {
+            border-color: #000;
+         }
+      }
+   }
 }
+// Start services
+.services {
+   margin: 70px 0;
+   .boxes-holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      .service-box {
+         background-color: #eee;
+         padding: 20px;
+         border-radius: 4px;
+         .title {
+            display: flex;
+            gap: 20px;
+
+            img {
+               width: 50px;
+               height: 50px;
+            }
+            h3 {
+               font-size: 1.4rem;
+            }
+         }
+         P {
+            color: $greyColor;
+            line-height: 1.5;
+            margin-top: 0;
+         }
+         a {
+            text-decoration: none;
+            color: #777;
+            background-color: #ddd;
+            padding: 0 5px;
+            border-radius: 4px;
+         }
+      }
+   }
+}
+// Start Our Players
+.our-players {
+   margin: 70px 0;
+   .boxes-holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1px;
+      .player-box {
+         background-color: #eee;
+         img {
+            width: 100%;
+            margin: 0 auto;
+         }
+         h3 {
+            font-weight: normal;
+            margin: 5px;
+         }
+
+         P {
+            padding: 0 20px;
+            color: $greyColor;
+            line-height: 1.2;
+            margin-top: 0;
+         }
+         a {
+            display: inline-block;
+            text-decoration: none;
+            color: #777;
+            background-color: #ddd;
+            padding: 0 5px;
+            margin: 0 40px 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px #777;
+         }
+      }
+   }
+}
+.gallery {
+   margin: 70px 0;
+   .boxes-holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      .lorem-box {
+         overflow: hidden;
+         text-align: center;
+         img {
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
 // p {
 //    //using media from variables directly
 //    @media (min-width: $minSmall) {

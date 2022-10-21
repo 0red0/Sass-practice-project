@@ -1,5 +1,14 @@
+* {
+   @include prefixer(box-sizing, border-box, webkit moz);
+}
 body {
+   background-color: $bodyBgc;
    font: {
       family: Tahoma;
    }
+}
+ul,
+ol {
+   list-style: none;
+   padding: 0;
 }
