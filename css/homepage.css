@@ -77,18 +77,34 @@ ol {
   width: 30%;
   float: left;
 }
+@media (max-width:992px) {
+  .header .logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
 .header .logo h1 {
   margin: 5px 0 0;
   font-size: 40px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 .header .logo p {
   color: #666;
 }
 .header .navbar {
+  overflow: hidden;
   width: 70%;
   float: left;
   background-color: #e2494c;
   border-radius: 4px;
+}
+@media (max-width:992px) {
+  .header .navbar {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
 }
 .header .navbar li {
   width: 20%;
@@ -252,7 +268,7 @@ ol {
 .footer .glry {
   color: #333;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 .footer .glry .section-title {
   font-family: Cambria, Cochin;
@@ -280,6 +296,12 @@ ol {
   max-width: 70%;
   color: #777;
 }
+@media (max-width:768px) {
+  .footer .glry .info {
+    grid-column: span 2;
+    text-align: center;
+  }
+}
 .footer .glry .info ul {
   line-height: 2;
   color: #777;
@@ -302,17 +324,38 @@ ol {
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
+  width: 300px;
+}
+@media (max-width:768px) {
+  .footer .glry .contact form {
+    width: 200px;
+  }
+}
+.footer .glry .contact form textarea,
+.footer .glry .contact form input {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 .footer .glry .contact form input {
-  padding: 10px;
+  outline: none;
 }
 .footer .glry .contact form textarea {
   height: 160px;
+  resize: none;
+}
+.footer .glry .contact form input[type=submit] {
+  justify-self: flex-start;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px #333;
 }
 .footer .copyrights {
   border-top: 1px solid #9c9c9c;
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: 0px -0.5px 1px #eee;
+  color: #333;
 }/*# sourceMappingURL=homepage.css.map */

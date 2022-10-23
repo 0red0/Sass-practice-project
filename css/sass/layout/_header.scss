@@ -6,19 +6,33 @@
       font-family: Georgia, "Times New Roman", Times, serif;
       width: 30%;
       float: $float-left;
+      @media #{$maxSmall} {
+         width: 100%;
+         float: none;
+         text-align: center;
+      }
       h1 {
          margin: 5px 0 0;
          font-size: 40px;
+         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6,
+            0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6,
+            0 0 35px #0073e6;
       }
       p {
          color: #666;
       }
    }
    .navbar {
+      overflow: hidden;
       width: 70%;
       float: $float-left;
       background-color: $redColor;
       border-radius: 4px;
+      @media #{$maxSmall} {
+         width: 100%;
+         float: none;
+         text-align: center;
+      }
       li {
          width: 20%;
          float: $float-left;

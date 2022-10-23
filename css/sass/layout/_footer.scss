@@ -3,7 +3,7 @@
    .glry {
       color: #333;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       .section-title {
          font-family: Cambria, Cochin;
       }
@@ -33,6 +33,10 @@
          }
       }
       .info {
+         @media #{$maxMobile} {
+            grid-column: span 2;
+            text-align: center;
+         }
          ul {
             line-height: 2;
             color: #777;
@@ -55,11 +59,28 @@
             display: grid;
             grid-template-columns: auto;
             gap: 20px;
+            width: 300px;
+            @media #{$maxMobile} {
+               width: 200px;
+            }
+            textarea,
             input {
+               border: none;
                padding: 10px;
+               border-radius: 5px;
+            }
+            input {
+               outline: none;
             }
             textarea {
                height: 160px;
+               resize: none;
+            }
+            input[type="submit"] {
+               justify-self: flex-start;
+               padding: 10px 20px;
+               cursor: pointer;
+               box-shadow: 0 2px 5px #333;
             }
          }
       }
@@ -68,7 +89,9 @@
       border-top: 1px solid $greyColor;
       padding: 20px 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       box-shadow: 0px -0.5px 1px #eee;
+      color: #333;
    }
 }
